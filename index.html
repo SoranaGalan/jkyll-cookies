@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contacts matter
+title: Retete Prajituri
 photos:
     image1: assets/photos/index/index1-640.jpg
     image2: assets/photos/index/index2-640.jpg
@@ -24,21 +24,22 @@ photos:
     <hr/>
 </div>
 
-<div id="main-page" class="container">
-    <div class="row">
-        {% include card-col2.html photo=page.photos.image1 title="Munca" %}
-        {% include card-col2.html photo=page.photos.image2 title="Distractie" %}
-    </div>
-</div>
 
 <div id="posts" class="container">
     <div class="row">
-        <ul>
         {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
+        <div class="column4">
+            <div class="card">
+                <img class="card-img-top" src="assets/photos/posts/{{ post.photos.cover }}" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">
+                    text
+                </p>
+                <a href="{{ post.url }}" class="btn btn-primary">Vezi mai mult</a>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
     </div>
 </div>
