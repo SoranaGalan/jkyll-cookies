@@ -6,6 +6,10 @@ $jumbo-text-color: #f8f8ff;
 $bg-start: #8bbff6;
 $bg-end: #c5def8;
 
+$bg-post-start: #bad8f8;
+$bg-post-end: #ebf2fa;
+
+
 html,
 body {
   height: 100%;
@@ -75,8 +79,56 @@ body {
   }
 }
 
-#contacts {
-  .card { width: 210px; margin: 5px; }
+#posts {
+  .column4 {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+
+  .row {margin: 0 -5px;}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .column4 {
+      width: 50%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column4 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+#one-post {
+  background: $bg-post-start;
+  background: linear-gradient(to right,$bg-post-start,$bg-post-end);
+
+  h1 { margin-top: 1em;}
+
+  .img-full {
+    width: 100%;
+  }
 }
 
 

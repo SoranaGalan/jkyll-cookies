@@ -1,8 +1,18 @@
 ---
 layout: default
 ---
-<div class="container">
+
+
+
+<div id="one-post" class="container">
     <div class="row">
-    {{ content }}
+        <div class="col">
+            <img class="img-full" src="/assets/photos/posts/{{ page.photos.cover }}" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {{ content }}
+        </div>
     </div>
 </div>
