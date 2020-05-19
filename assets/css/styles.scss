@@ -101,7 +101,7 @@ body {
     margin-bottom: 10px;
     background-color: #f1f1f1;
   }
-  
+
   .card-title {
     height: 4em;
   }
@@ -141,4 +141,19 @@ body {
   small {
     color: ivory
   }
+}
+
+
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
