@@ -4,6 +4,11 @@ title:  Entrement cu ciocolată
 category: cookies
 photos:
    cover: entremet-cu-piersici-si-ciocolata/cover.jpg
+   images:
+      - /assets/photos/posts/entremet-cu-piersici-si-ciocolata/image1.jpg
+      - /assets/photos/posts/entremet-cu-piersici-si-ciocolata/image2.jpg
+      - /assets/photos/posts/entremet-cu-piersici-si-ciocolata/image3.jpg
+      - /assets/photos/posts/entremet-cu-piersici-si-ciocolata/image4.jpg
 ---
 
 # {{ page.title }}
@@ -132,3 +137,5 @@ Foaia mare de ciocolata o taiem in dreptunghiuri de 2/7 cm. Folosim un cutit sub
 Desprindem usor folia de acetat din jurul spiralei de ciocolata si o transferam deasupra prajiturii.
 Scoatem un rulou cu mousse de piersici din congelator. Desprindem folia si il plasam in mijlocul spiralei de ciocolata. Procedam la fel si cu celelalte 5 bucati.
 Acum prajitura este gata! Plina de arome, texturi, straturi, dar mai ales de ciocolata…va asteapta sa o degustati. *Enjoy!*
+
+{% include photo-gallery.html images=page.photos.images %}

@@ -4,6 +4,12 @@ title:  Cheesecake cu ciocolata
 category: cookies
 photos:
    cover: cheesecake-cu-ciocolata/cover.jpg
+   images:
+      - /assets/photos/posts/cheesecake-cu-ciocolata/image1.jpg
+      - /assets/photos/posts/cheesecake-cu-ciocolata/image2.jpg
+      - /assets/photos/posts/cheesecake-cu-ciocolata/image3.jpg
+      - /assets/photos/posts/cheesecake-cu-ciocolata/image4.jpg
+      
 ---
 
 # {{ page.title }}
@@ -38,5 +44,7 @@ Pregatim o tava cu pereti detasabili, de 30-32 cm dimetru: ii ungem fundul cu un
 Amestecam crema de branza cu zaharul pudra vanilat, pana granulele de zahar nu se mai simt. Topim ciocolata la baie de abur, apoi o adaugam peste crema de branza. Amestecam. La final adaugam frisca batuta. Turnam compozitia de ciocolata in tava, peste blatul de biscuiti. Nivelam si dam tava la rece peste noapte.
 
 Desi va fi FOARTE greu sa ne abtinem, stiind ce bunatate ne asteapta in frigider, Cheesecake cu ciocolata TREBUIE sa stea la rece pentru a fi bine legata!
+
+{% include photo-gallery.html images=page.photos.images %}
 
 *Pofta buna!*
